@@ -14,3 +14,5 @@ What are apps that create + manage process?
 - GradeScope autograder
 
 fork() copies the entire process and return the pid of the copy
+
+execvp() overwrites the process, destroying it, fresh heap
