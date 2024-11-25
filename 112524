@@ -12,3 +12,5 @@ What are apps that create + manage process?
 -> Can we isolate/limit a process?
 - bash/terminal -> there are C programs!
 - GradeScope autograder
+
+fork() copies the entire process and return the pid of the copy
