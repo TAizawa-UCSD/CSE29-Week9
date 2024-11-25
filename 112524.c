@@ -6,6 +6,12 @@ int main(){
   if(result){
     printf("fork returned true\n");
   } else {
-    printf("fork returned false\n");
+    char* args[] = {"ls", NULL};
+    execvp("ls", args);
+    /*
+    while(1){
+      printf("fork returned false\n");
+    }
+    */
   }
 }
