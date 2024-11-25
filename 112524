@@ -1,0 +1,14 @@
+Processes: what is a process?　→ the memory, current instructions, and systemresources for a running program.
+
+Process changes memory through code/instruction.    Not part of process: gcc before the program starts
+Keeps track of system resources: sockets, stdin, stdout
+
+How do we create and manage processes from aprogram?
+pid_t fork()
+coid execup(cmd,args) (manage/start/control)
+What are apps that create + manage process?
+- text editor 
+- youtube(?) (process for Audio video vs. web page)
+-> Can we isolate/limit a process?
+- bash/terminal -> there are C programs!
+- GradeScope autograder
