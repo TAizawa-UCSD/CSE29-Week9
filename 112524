@@ -16,3 +16,7 @@ What are apps that create + manage process?
 fork() copies the entire process and return the pid of the copy
 
 execvp() overwrites the process, destroying it, fresh heap
+
+
+
+man ps: check all the processes by surrent user.
