@@ -1,0 +1,39 @@
+1. open a file
+2. write to a file
+3. close a file : 
+fclose(FILE* f) closes a file and fluches the buffer
+fflush(FILE* f) flushes the file's buffer.
+  
+(in stdio.h) : 
+  FILE* fopen(char* path{relative path to the file}, char* mode{"w":write, "r":read, "a":append})
+  
+(example)
+  FILE* server_log;
+  void handle_response(char* ){
+    char path[256];
+    fprintf(server_log, "\nSEVER LOG: Got request: \%"s\"\n");
+    fflush(server_log);
+
+    if(strcmp(path,"/") == 0){
+      handle_root(client_sock);
+      return;
+    }
+  }
+
+  int main(int argc, char* argv[]){
+    int port = 0;
+    if(argc >= 2){
+      port = atoi(argv[1]);
+    }
+    server_log = fopen("logfile.txt","a");
+
+    start_server(&handle_response, port);
+  }
+
+printf(char* fnt, val,...);
+fprintf(FILE* file, char* fnt, val, ...);
+fprintf buffers its output: saves the bytes to write in memory for "a while" before writing to "disk".
+Why buffer?
+  multiple edits to the same bytes.
+  Hardware to same files sized in fixed sized chunkcs so we wait for that many bytes.
+  Saving bytes to persistent hardware if relatively slow(compaed to memory).
