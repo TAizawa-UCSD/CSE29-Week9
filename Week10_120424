@@ -1,0 +1,19 @@
+CPU(centrual processing unit) : Apple marketing materials(3GHz)
+
+red1: 64bits
+reg2: 64bits
+.
+.
+reg16: 64bits
+
+add reg1, reg2 #add values in r1, r2 and store in r1
+
+3 GHz means 3 billion "cycles" / sec
+CPU instructions like "add" take ~~ 1 cycle, 10^-9 nanosecond
+Memory instructions like "mov" take ~~ 10-100 cycles, 10^-7,8 nanoseconds (because memory is separated, and communication takes time)
+SSD storage ~~ 1M cycles, 10^-3 sec | 1ms
+HDD storage ~~ 10M cycles, 1/100 sec
+
+VON NEUMANN Machine : transferring memory between main memory and Memrory Management Unit
+
+
